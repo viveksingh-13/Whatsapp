@@ -14,7 +14,7 @@ const Auth = () => {
     React.useCallback(() => {
       setIsLoading(false);
       const loadingTimeout = setTimeout(() => {
-        setIsLoading(true); // Show the loading state after 2 seconds
+        setIsLoading(true);
       }, 2000);
 
       const navigationTimeout = setTimeout(() => {
