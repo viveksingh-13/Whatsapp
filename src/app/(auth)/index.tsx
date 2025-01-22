@@ -12,7 +12,6 @@ const Auth = () => {
 
   useFocusEffect(
     React.useCallback(() => {
-      // Reset isLoading state whenever the screen is focused
       setIsLoading(false);
       const loadingTimeout = setTimeout(() => {
         setIsLoading(true); // Show the loading state after 2 seconds
