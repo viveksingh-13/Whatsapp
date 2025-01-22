@@ -19,10 +19,9 @@ const Auth = () => {
       }, 2000);
 
       const navigationTimeout = setTimeout(() => {
-        router.push("/terms_agree"); // Navigate after 3 seconds
+        router.push("/terms_agree");
       }, 3000);
 
-      // Cleanup timeouts on screen blur
       return () => {
         clearTimeout(loadingTimeout);
         clearTimeout(navigationTimeout);
